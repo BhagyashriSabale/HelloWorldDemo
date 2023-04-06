@@ -11,6 +11,8 @@ namespace HelloWorldDemo
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Hello World");
+            Console.WriteLine("Code pushing by 2nd Developers");
+            Console.WriteLine("Modifying in local repository");
         }
     }
 }
