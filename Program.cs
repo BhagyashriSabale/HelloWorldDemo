@@ -11,14 +11,28 @@ namespace HelloWorldDemo
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Hello World");
-<<<<<<< HEAD
             Console.WriteLine("Code pushing by 2nd Developers");
             Console.WriteLine("Modifying in local repository");
             Console.WriteLine("Good Morning");
-=======
             Console.WriteLine("Modifying in remote repo");
             Console.WriteLine("Hello");
->>>>>>> 302eacdbc57ca83ceccf23612fa2a57f1c9e934b
+            //object syntax
+            //Classname variable=new ClassName
+            Human human = new Human();
+            //display msh on output screen
+            Console.WriteLine("Please enter human name");
+            //reading input from output screen
+            //reading input from output screen
+            human.name = Console.ReadLine();
+            Console.WriteLine("please enter your height");
+            human.height = Convert.ToSingle(Console.ReadLine());
+            Console.WriteLine("please enter your weight");
+            human.weight = Convert.ToSingle(Console.ReadLine());
+            Console.WriteLine("please enter your age");
+            human.age = Convert.ToInt32(Console.ReadLine());
+            human.Speak();
+            human.HumanDetails(human.name, human.height, human.weight, human.age);
+
         }
     }
 }
