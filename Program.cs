@@ -1,4 +1,5 @@
 ﻿using HelloWorldDemo.Abstraction;
+using HelloWorldDemo.Encapsulation;
 using HelloWorldDemo.Inheritance;
 using HelloWorldDemo.Polymorphism;
 using System;
@@ -15,7 +16,7 @@ namespace HelloWorldDemo
         {
             Console.WriteLine("Welcome to Hello World");
             Console.WriteLine("Please choose 1program from below options");
-            Console.WriteLine("1.Human\n2.Inheritance\n3.Method Overloading\n4.Methos Overriding\n5.Abstraction");
+            Console.WriteLine("1.Human\n2.Inheritance\n3.Method Overloading\n4.Methos Overriding\n5.Abstraction\n6.Encapsulation");
             int option=Convert.ToInt32(Console.ReadLine());
 
             switch(option)
@@ -68,6 +69,13 @@ namespace HelloWorldDemo
                     employee.name = "Bali";
                     employee.GetEmployeeDetails();
                     employee.GetSalary();
+                    break;
+
+                case 6:
+                    Student student = new Student();
+                    Console.WriteLine("please enter the student name");
+                    student.Name = Console.ReadLine();
+                    Console.WriteLine(student.Name);
                     break;
 
                 default:

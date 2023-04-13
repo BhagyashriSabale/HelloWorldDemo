@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Abstraction\Employee.cs" />
     <Compile Include="Abstraction\ParttimeEmployee.cs" />
+    <Compile Include="Encapsulation\Student.cs" />
     <Compile Include="Human.cs" />
     <Compile Include="Inheritance\Car.cs" />
     <Compile Include="Inheritance\Vehicle.cs" />
