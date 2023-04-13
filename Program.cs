@@ -14,7 +14,7 @@ namespace HelloWorldDemo
         {
             Console.WriteLine("Welcome to Hello World");
             Console.WriteLine("Please choose 1program from below options");
-            Console.WriteLine("1.Human\n2.Inheritance\n3.Method Overloading");
+            Console.WriteLine("1.Human\n2.Inheritance\n3.Method Overloading\n4.Methos Overriding");
             int option=Convert.ToInt32(Console.ReadLine());
 
             switch(option)
@@ -48,6 +48,18 @@ namespace HelloWorldDemo
                 case 3:
                     Addition addition = new Addition();
                     addition.AddNumbers(10,34.56,60);
+                    break;
+
+                case 4:
+                    Animal animal = new Animal();
+                    animal.name = "Elephant";
+                    animal.AnimalDetails();
+                    animal.Run();
+
+                    Lion lion = new Lion();
+                    lion.name = "Lion";
+                    lion.AnimalDetails();
+                    lion.Run();
                     break;
 
                 default:

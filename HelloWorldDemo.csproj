@@ -47,6 +47,7 @@
     <Compile Include="Inheritance\Car.cs" />
     <Compile Include="Inheritance\Vehicle.cs" />
     <Compile Include="Polymorphism\MethodOverloading.cs" />
+    <Compile Include="Polymorphism\MethodOverriding.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
