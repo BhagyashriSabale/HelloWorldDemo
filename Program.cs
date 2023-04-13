@@ -1,4 +1,5 @@
-﻿using HelloWorldDemo.Inheritance;
+﻿using HelloWorldDemo.Abstraction;
+using HelloWorldDemo.Inheritance;
 using HelloWorldDemo.Polymorphism;
 using System;
 using System.Collections.Generic;
@@ -14,7 +15,7 @@ namespace HelloWorldDemo
         {
             Console.WriteLine("Welcome to Hello World");
             Console.WriteLine("Please choose 1program from below options");
-            Console.WriteLine("1.Human\n2.Inheritance\n3.Method Overloading\n4.Methos Overriding");
+            Console.WriteLine("1.Human\n2.Inheritance\n3.Method Overloading\n4.Methos Overriding\n5.Abstraction");
             int option=Convert.ToInt32(Console.ReadLine());
 
             switch(option)
@@ -60,6 +61,13 @@ namespace HelloWorldDemo
                     lion.name = "Lion";
                     lion.AnimalDetails();
                     lion.Run();
+                    break;
+
+                case 5:
+                    ParttimeEmployee employee = new ParttimeEmployee();
+                    employee.name = "Bali";
+                    employee.GetEmployeeDetails();
+                    employee.GetSalary();
                     break;
 
                 default:
