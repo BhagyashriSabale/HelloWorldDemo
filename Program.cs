@@ -1,4 +1,5 @@
 ﻿using HelloWorldDemo.Inheritance;
+using HelloWorldDemo.Polymorphism;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +14,7 @@ namespace HelloWorldDemo
         {
             Console.WriteLine("Welcome to Hello World");
             Console.WriteLine("Please choose 1program from below options");
-            Console.WriteLine("1.Human\n2.Inheritance");
+            Console.WriteLine("1.Human\n2.Inheritance\n3.Method Overloading");
             int option=Convert.ToInt32(Console.ReadLine());
 
             switch(option)
@@ -42,6 +43,11 @@ namespace HelloWorldDemo
                     car.modelNumber = 2022;
                     car.brand = "BMW";
                     car.Start();
+                    break;
+
+                case 3:
+                    Addition addition = new Addition();
+                    addition.AddNumbers(10,34.56,60);
                     break;
 
                 default:
